@@ -127,10 +127,10 @@ const retoSeisContenedor = document.getElementById("reto-6-resultado");
 const retoSeis = () => {
   let numero = parseInt(retoSeisInputA.value);
   
+  while (retoSeisContenedor.firstChild) {
+    retoSeisContenedor.removeChild(retoSeisContenedor.firstChild);
+  };
   if (numero > 0){
-    while (retoSeisContenedor.firstChild) {
-      retoSeisContenedor.removeChild(retoSeisContenedor.firstChild);
-    };
     for (let i = 0; i <= numero ; i++) {
       let contNumero = document.createElement('h3');
       let contenido = document.createTextNode(numero - i);
