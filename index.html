@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos con javascript | Parte 5</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <div class="header">
+        <a href="#default" class="logo">
+            <span class="logo">Daro🐱‍👤</span>
+        </a>
+        <div class="header-right">
+            <a href="https://github.com/OmarDarioMelendrez" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/omar-dario-melendrez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+    <!-- END HEADER -->
+    
+    <div class="container">
+        <h1>Ejercicios de programación parte 5 | ciclo 'for'</h1>
+        
+        
+    <!-- RETO NUMERO 1 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 1 | Curso favorito</h2>
+                <p>Pide a tu usuario que indique cual es su curso favorito de Platzi e imprímelo en pantalla 8 veces.</p>
+                <div class="input">
+                    <label for="reto-1-input-a">Ingrese el nombre de tu curso favorito:</label>
+                    <input id="reto-1-input-a" type="text" placeholder="Indique curso favorito">
+                    <button class="big-button"  onclick="retoUno()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-1-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 2 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 2 | Curso favorito ‘n’ veces</h2>
+                <p>Toma el reto anterior, pero ahora pregunta al usuario cuantas veces quiere mostrar el mensaje.</p>
+                <div class="input">
+                    <label for="reto-2-input-a">Ingrese el nombre de tu curso favorito:</label>
+                    <input id="reto-2-input-a" type="text" placeholder="Indique curso favorito">
+                    <label for="reto-2-input-b">Cuantas veces repetimos el curso?:</label>
+                    <input id="reto-2-input-b" type="text" placeholder="Veces">
+                    <button class="big-button"  onclick="retoDos()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-2-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 3 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 3 | Curso en una columna</h2>
+                <p>Nuevamente, pide a tu usuario que indique su curso favorito de Platzi pero ahora muestra un caracter por línea de forma que puede parecer el inicio de un acróstico.</p>
+                <div class="input">
+                    <label for="reto-3-input-a">Ingrese el nombre de tu curso favorito:</label>
+                    <input id="reto-3-input-a" type="text" placeholder="Indique curso favorito">
+                    <button class="big-button"  onclick="retoTres()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-3-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 4 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 4 | Animal en columna ‘n’ veces.</h2>
+                <p>Toma como base el reto anterior, pide a tu usuario que indique su animal favorito y después muéstralo con un caracter por línea. Esto debe repetirse un número de veces que ya hayas preguntado a tu usuario.</p>
+                <div class="input">
+                    <label for="reto-4-input-a">Ingrese el nombre de tu curso favorito:</label>
+                    <input id="reto-4-input-a" type="text" placeholder="Indique animal favorito">
+                    <label for="reto-4-input-b">Cuantas veces repetimos el animal?:</label>
+                    <input id="reto-4-input-b" type="text" placeholder="Veces">
+                    <button class="big-button"  onclick="retoCuatro()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-4-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 5 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 5 | Tabla de multiplicar</h2>
+                <p>Pide a tu usuario un número, luego de ello muestra la tabla de multiplicar de ese número del 1 al 10.</p>
+                <div class="input">
+                    <label for="reto-5-input-a">Ingrese el un número:</label>
+                    <input id="reto-5-input-a" type="text" placeholder="Indique número">
+                    <button class="big-button"  onclick="retoCinco()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-5-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 6 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 6 | Cuenta regresiva</h2>
+                <p>Pide a tu usuario un número, después imprime una cuenta regresiva uno a uno, desde ese número hasta 0. Esto aplica también para números negativos.</p>
+                <div class="input">
+                    <label for="reto-6-input-a">Ingrese el un número positivo o negativo:</label>
+                    <input id="reto-6-input-a" type="text" placeholder="Indique número">
+                    <button class="big-button"  onclick="retoSeis()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-6-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 7 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 7 | Curso favorito, sin exagerar</h2>
+                <p>Imprimir el curso la cantidad solicitada, pero si el número ‘n’ es mayor a 15, solo imprimirás el nombre del curso 3 veces e indicarás que ‘n’ es un número muy grande.</p>
+                <div class="input">
+                    <label for="reto-7-input-a">Ingrese sú curso favorito:</label>
+                    <input id="reto-7-input-a" type="text" placeholder="Indique curso">
+                    <label for="reto-7-input-b">Indique cantidad de veces a imprimir el curso:</label>
+                    <input id="reto-7-input-b" type="text" placeholder="Indique número">
+                    <button class="big-button"  onclick="retoSiete()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-7-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 7 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 8 | Suma autorizada</h2>
+                <p>Crearás un programa que pedirá a tu usuario 4 números, uno por uno. Al indicarlo preguntarás al usuario si desea sumarlo al total, si la respuesta es afirmativa se sumará. Al final debes mostrar el valor de la suma de aquellos números que fueron aceptados para la suma.</p>
+                <div class="input">
+                    <button class="big-button"  onclick="retoOcho()" type="button" >PUSH ME!</button>
+                </div>
+                <div id="reto-8-resultado"></div>    
+            </div>
+        </section>
+
+
+    </div>
+    
+    <script src="./js/retos.js"></script>
+</body>
+</html>
